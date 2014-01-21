@@ -1,0 +1,17 @@
+#!/bin/bash
+project_name=${PWD##*/}
+
+if ! grep $project_name README.md 1>/dev/null; then
+    echo "$project_name was not found in README.md"
+fi
+
+required_files=('CONTRIBUTING.md' 'COPYING.txt' 'README.md' 'TERMS.md')
+
+for file in "${required_files[@]}"; do
+    if [ ! -f $file ]; then
+        echo "Required File: $file not found"
+    fi
+done
+
+
+
