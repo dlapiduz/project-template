@@ -1,5 +1,7 @@
 # project-template
 
+[![Build Status](https://travis-ci.org/dlapiduz/project-template.png?branch=master)](https://travis-ci.org/dlapiduz/project-template)
+
 This is an OSS project template for future projects to be based off of.
 
 ### Licensing
